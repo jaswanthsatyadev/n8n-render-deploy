@@ -11,3 +11,18 @@ The `render.yaml` file defines the following resources:
 - A Render Postgres database that stores n8n data
 
 Each of the above uses a free instance type by default.
+
+Important: Keep It Alive (For free render users)
+Free tier sleeps after 15 mins of inactivity. To keep it awake:​
+
+Setup Cron Job:
+
+Go to https://cron-job.org (free account)​
+
+Create new cron job:
+
+URL: https://your-n8n-xyz.onrender.com
+
+Schedule: Every 10 minutes (*/10 * * * *)​
+
+Save → Your n8n stays awake 24/7​
